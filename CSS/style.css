@@ -1,0 +1,136 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(../images/bg-desktop.svg);
+  background-position-x: 3px;
+  background-position-y: -52px;
+  background-repeat: no-repeat;
+}
+
+.container {
+  padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+header .container .logo img {
+  width: 200px;
+  padding: 40px 0px;
+}
+
+.content {
+  margin: 10px 0px;
+}
+.content .container {
+  padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.content .container .imge img{
+  max-width: 100%;
+  width: 650px;
+} 
+.content .container .text {
+flex: 1;
+}
+.content .container .text h1 {
+  color: white;
+  font-weight: 600;
+  line-height: 1.6;
+  font-size: 40px;
+}
+
+.content .container .text p {
+  color: #f5f5f5bf;
+  max-width: 495px;
+  line-height: 1.6;
+  font-size: large;
+}
+
+.content .container .text button {
+  border-radius: 250px;
+  border: none;
+  width: 190px;
+  height: 55px;
+  font-family: "Poppins", sans-serif;
+  color: hsl(257, 40%, 49%);
+  font-weight: 500;
+  font-size: 17px;
+  margin-top: 20px;
+  box-shadow: 0px 10px 20px #3f3c3c;
+}
+@media (max-width: 768px) {
+  .content .container .text {
+    text-align: center;
+  }
+  .content .container .text button{
+    width: 250px;
+  }
+}
+
+.content .container .text button a {
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+  cursor: pointer;
+}
+footer{
+  padding: 45px 0;
+}
+footer .container {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  footer .container {
+  justify-content: center;
+  }
+}
+i {
+  margin-left: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+
+i:hover {
+  color: hsl(300, 69%, 71%);
+  border: 2px solid;
+  cursor: pointer;
+}
+
